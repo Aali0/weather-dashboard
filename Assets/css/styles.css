@@ -1,0 +1,40 @@
+#day-one {
+    float: inline-start;
+    overflow: auto;
+    height: fit-content;
+    width: 12rem;
+    flex: auto;
+}
+
+
+#day-two {
+    float: inline-end;
+    overflow: auto;
+    height: fit-content;
+    width: 12rem;
+}
+
+
+#day-three {
+    float: initial;
+    overflow: auto;
+    height: fit-content;
+    width: 12rem;
+}
+
+
+#day-four {
+    float: initial;
+    overflow: auto;
+    height: fit-content;
+    width: 12rem;
+}
+
+
+#day-five {
+    float: initial;
+    overflow: auto;
+    height: fit-content;
+    width: 12rem;
+}
+
