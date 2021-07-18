@@ -1,4 +1,4 @@
-# Title: Weather Dashboard
+# Title: JQuery Weather Dashboard
 
 ## Table of Contents:
 * [Description: ](#description)
