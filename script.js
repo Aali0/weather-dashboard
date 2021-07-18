@@ -96,7 +96,32 @@ $(document).ready(() => {
         });
     }
 
-    
+
+    const getUVIndex = (lat, lon) => {
+        $.ajax({
+            type: 'GET',
+            url: `http://api.openweathermap.org/data/2.5/uvi?appid=7ba67ac190f85fdba2e2dc6b9d32e93c&lat=${lat}&lon=${lon}`,
+            dataType: 'json',
+            success: function(data) {
+                let uv = $('<p>').text('UV Index: ');
+                let btn = $('<span>').addClass('btn btn-sm').text(data.value);
+
+                // change color based on value
+                if(data.value < 3) {
+                    btn.addClass('btn-success');
+                }
+                else if (data.value < 7) {
+                    btn.addClass('btn-warning');
+                }
+                else {
+                    btn.addClass('btn-danger');
+                }
+
+                $('#today .card-body').append(uv.append(btn));
+            }
+        });
+    }
+
 
 
 
